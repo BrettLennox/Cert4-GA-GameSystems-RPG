@@ -1392,8 +1392,33 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0, z: 0}
   charC: {fileID: 0}
   moveSpeed: 5
+  walkSpeed: 5
+  crouchSpeed: 2.5
+  runSpeed: 10
   jumpSpeed: 8
   gravity: 20
+  input: {x: 0, y: 0}
+  baseSetup:
+  - keyName: Forward
+    defaultKey: W
+  - keyName: Backward
+    defaultKey: S
+  - keyName: Right
+    defaultKey: D
+  - keyName: Left
+    defaultKey: A
+  - keyName: Jump
+    defaultKey: Space
+  - keyName: Interact
+    defaultKey: E
+  - keyName: Inventory
+    defaultKey: Tab
+  - keyName: Sprint
+    defaultKey: LeftShift
+  - keyName: Crouch
+    defaultKey: C
+  - keyName: Attack
+    defaultKey: Mouse0
 --- !u!143 &1233937810
 CharacterController:
   m_ObjectHideFlags: 0

@@ -32,11 +32,12 @@ public class KeyBinds : MonoBehaviour
 
     public void SaveKeys()
     {
-        foreach(var key in keys)
-        {
-            PlayerPrefs.SetString(key.Key, key.Value.ToString());
-        }
-        PlayerPrefs.Save();
+        //foreach(var key in keys)
+        //{
+        //    PlayerPrefs.SetString(key.Key, key.Value.ToString());
+        //}
+        //PlayerPrefs.Save();
+        HandleTextFile.WriteToString();
     }
 
     public void ChangeKey(GameObject clickedKey)
@@ -74,9 +75,13 @@ public class KeyBinds : MonoBehaviour
             {
                 newKey = "RightShift";
             }
-            if (Input.GetKey(KeyCode.Mouse0))
+            /*if (Input.GetKey(KeyCode.Mouse0))
             {
                 newKey = "Mouse0";
+            }*/
+            if (e.isMouse)
+            {
+                newKey = e.button.ToString();
             }
             if(newKey != "")//if we have set a key
             {
@@ -88,6 +93,7 @@ public class KeyBinds : MonoBehaviour
                 currentKey.GetComponent<Image>().color = changedKey;
                 //forget the object we were editing
                 currentKey = null;
+                HandleTextFile.WriteToString();
             }
         }
     }
