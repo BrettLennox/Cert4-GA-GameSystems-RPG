@@ -1,0 +1,6 @@
+Skin:0
+Hair:1
+Mouth:1
+Eyes:0
+Clothes:10
+Armour:9

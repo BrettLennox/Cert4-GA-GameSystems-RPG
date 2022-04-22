@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &80778054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80778055}
+  - component: {fileID: 80778056}
+  m_Layer: 0
+  m_Name: Custom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80778055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80778054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1441201460558967234}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80778056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80778054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8792b25cd850e1d4d8af843b773ac9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: []
+  hair: []
+  mouth: []
+  eyes: []
+  clothes: []
+  armour: []
+  skinIndex: 0
+  hairIndex: 0
+  mouthIndex: 0
+  eyesIndex: 0
+  clothesIndex: 0
+  armourIndex: 0
+  charRend: {fileID: 0}
+  skinMax: 4
+  hairMax: 5
+  mouthMax: 3
+  eyesMax: 4
+  clothesMax: 11
+  armourMax: 11
+  characterName: Adventurer
+  scr: {x: 0, y: 0}
 --- !u!1 &1315929436040276486
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +367,7 @@ Transform:
   m_Children:
   - {fileID: 1797953798719898868}
   - {fileID: 2850300399769704189}
+  - {fileID: 80778055}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -423,11 +488,11 @@ SkinnedMeshRenderer:
   m_Materials:
   - {fileID: 239378781582670930, guid: 903db7208361e3b4f83e14ebb8086e94, type: 3}
   - {fileID: 2100000, guid: 96165b5f2868b61419842016eb7ed23c, type: 2}
-  - {fileID: 2100000, guid: 3922090c97184884da68a8fd0b2223e5, type: 2}
-  - {fileID: 2100000, guid: c5e6de9e480720845af454f461cddbf2, type: 2}
   - {fileID: 2100000, guid: 301123b05cbd58845b34e88d40be9589, type: 2}
-  - {fileID: 2100000, guid: 767654a328104a14eba7cbcb5ff058c8, type: 2}
+  - {fileID: 2100000, guid: c5e6de9e480720845af454f461cddbf2, type: 2}
+  - {fileID: 2100000, guid: 3922090c97184884da68a8fd0b2223e5, type: 2}
   - {fileID: 2100000, guid: efb36b7d6996bef488ecb64a3bc25239, type: 2}
+  - {fileID: 2100000, guid: 767654a328104a14eba7cbcb5ff058c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
