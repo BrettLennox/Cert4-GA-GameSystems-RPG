@@ -12,7 +12,7 @@ public class CustomisationGet : MonoBehaviour
     void Start()
     {
         //load
-        character = GetComponent<Renderer>();
+        character = GameObject.Find("Mesh").GetComponent<Renderer>();
         Load();
     }
 
@@ -26,8 +26,11 @@ public class CustomisationGet : MonoBehaviour
         while ((line = reader.ReadLine()) != null)
         {
             string[] parts = line.Split(':');
+            foreach(var part in parts)
+            {
+                Debug.Log(part);
+            }
         }
-
         SetTexture("Skin", 0);
         SetTexture("Hair", 0);
         SetTexture("Mouth", 0);
