@@ -741,6 +741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1233937814}
     m_Modifications:
+    - target: {fileID: 80778056, guid: 2def9cb04b3dfb74680c92cc40632ee5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1441201460558967234, guid: 2def9cb04b3dfb74680c92cc40632ee5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -794,6 +798,16 @@ PrefabInstance:
 --- !u!4 &842671335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1441201460558967234, guid: 2def9cb04b3dfb74680c92cc40632ee5, type: 3}
+  m_PrefabInstance: {fileID: 842671334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &842671336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4078023357143409440, guid: 2def9cb04b3dfb74680c92cc40632ee5, type: 3}
+  m_PrefabInstance: {fileID: 842671334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &842671337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7447323448782979116, guid: 2def9cb04b3dfb74680c92cc40632ee5, type: 3}
   m_PrefabInstance: {fileID: 842671334}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &879027101
@@ -1093,7 +1107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894650643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1.035, z: 0.383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1233937814}
@@ -1432,6 +1446,7 @@ GameObject:
   - component: {fileID: 1233937810}
   - component: {fileID: 1233937809}
   - component: {fileID: 1233937815}
+  - component: {fileID: 1233937816}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1575,6 +1590,7 @@ Transform:
   m_Children:
   - {fileID: 894650646}
   - {fileID: 842671335}
+  - {fileID: 1970475525}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1595,6 +1611,39 @@ MonoBehaviour:
   minY: -60
   maxY: 60
   invert: 0
+--- !u!114 &1233937816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233937808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b43e4c85de45154a91275a295c2dd75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollPos: {x: 0, y: 0}
+  sortType: 
+  enumTypesForItems:
+  - All
+  - Food
+  - Weapon
+  - Apparel
+  - Crafting
+  - Ingredient
+  - Potion
+  - Scroll
+  - Quest
+  - Money
+  dropLocation: {fileID: 1970475525}
+  equipmentSlots:
+  - slotName: Weapon Slot
+    equipLocation: {fileID: 842671337}
+    currentItem: {fileID: 0}
+  - slotName: Helmet Slot
+    equipLocation: {fileID: 842671336}
+    currentItem: {fileID: 0}
 --- !u!1 &1329458697
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,3 +2429,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.274}
   m_SizeDelta: {x: 3, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1970475524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970475525}
+  m_Layer: 0
+  m_Name: Drop Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970475525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970475524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.603}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1233937814}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -4,7 +4,7 @@ Left:A
 Right:D
 Jump:Space
 Interact:E
-Inventory:I
+Inventory:Tab
 Sprint:LeftShift
 Crouch:C
 Attack:Mouse0

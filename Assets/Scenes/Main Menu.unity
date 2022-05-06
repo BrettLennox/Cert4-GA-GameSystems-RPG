@@ -2669,7 +2669,7 @@ MonoBehaviour:
     defaultKey: E
   - keyName: Inventory
     keyDisplayText: {fileID: 1559924195}
-    defaultKey: I
+    defaultKey: Tab
   - keyName: Sprint
     keyDisplayText: {fileID: 1964432622}
     defaultKey: LeftShift
