@@ -44,6 +44,17 @@ public static class ItemData
                 _value = 1;
                 _amount = 1;
                 _icon = "Weapon/Axe";
+                _mesh = "Weapon/Axe";
+                _type = ItemTypes.Weapon;
+                _heal = 10;
+                break;
+            case 101:
+                _name = "Sword";
+                _description = "Heavy but deadly";
+                _value = 1;
+                _amount = 1;
+                _icon = "Weapon/Sword";
+                _mesh = "Weapon/Sword";
                 _type = ItemTypes.Weapon;
                 _heal = 10;
                 break;
@@ -199,7 +210,7 @@ public static class ItemData
             Amount = _amount,
             Type = _type,
             Icon = Resources.Load("Icon/" + _icon) as Texture2D,
-            Prefab = Resources.Load("Prefab/" + _mesh) as GameObject,
+            Mesh = Resources.Load("Prefab/" + _mesh) as GameObject,
             Damage = _damage,
             Armour = _armour,
             Heal = _heal

@@ -47,6 +47,10 @@ public class Interact : MonoBehaviour
                 if (hitInfo.collider.tag == "Item")
                 {
                     Debug.Log("Item");
+                    if (hitInfo.collider.GetComponent<ItemHandler>())
+                    {
+                        hitInfo.collider.GetComponent<ItemHandler>().OnCollection();
+                    }
                 }
                 #endregion
                 #region Chest

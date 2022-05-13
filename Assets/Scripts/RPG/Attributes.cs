@@ -21,7 +21,7 @@ public class Attributes : MonoBehaviour
     public virtual void Start()
     {
         attributes[0].name = "Health";
-        attributes[0].name = "Mana";
-        attributes[0].name = "Stamina";
+        attributes[1].name = "Mana";
+        attributes[2].name = "Stamina";
     }
 }

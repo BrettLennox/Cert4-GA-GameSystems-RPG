@@ -48,7 +48,7 @@ public class Item
         get { return _icon; }
         set { _icon = value; }
     }
-    public GameObject Prefab
+    public GameObject Mesh
     {
         get { return _prefab; }
         set { _prefab = value; }
